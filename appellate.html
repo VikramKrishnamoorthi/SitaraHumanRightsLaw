@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitara Human Rights Law</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<div class="relative isolate px-6 pt-14 lg:px-8 h-screen flex items-center justify-center overflow-hidden">
+    <div aria-hidden="true" class="absolute inset-0 -z-10">
+        <img src="Pictures/2025 re-oath ceremony w_ Justice Dato.jpg"
+             alt="Hero Background"
+             class="h-full w-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-black/30"></div>
+    </div>
+    <div class="mx-auto max-w-2xl text-center">
+        <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl drop-shadow-lg">
+            Exceptional Appellate Representation
+        </h1>
+    </div>
+</div>
+
+<section class="relative bg-[#9E2A27] text-white py-32 overflow-hidden">
+
+    <!-- 1. The Decorative Bars (Stays on the right) -->
+    <div class="absolute top-10 right-[-150px] w-[639px] h-[32px] bg-[#EDEAE0] hidden lg:block z-0"></div>
+    <div class="absolute top-24 right-[-300px] w-[639px] h-[32px] bg-[#EDEAE0] hidden lg:block z-0"></div>
+
+    <!-- 2. Background Watermark (Moved to the right side) -->
+    <div class="absolute top-30 right-[-10%] w-[950px] opacity-80 pointer-events-none z-0">
+        <img src="Logos and branding/Sitara Logo Files/Logo Transparent/46 (3).png" class="w-full h-auto" alt="">
+    </div>
+
+    <!-- 3. Main Content Container -->
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+        <!-- Grid: Two columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+            <!-- LEFT COLUMN: Image and Text stack here -->
+            <div class="flex flex-col gap-10">
+                <!-- Framed Image -->
+                <div class="relative w-full aspect-[4/3] shadow-2xl">
+                    <img src="Pictures/plants.jpeg" alt="Office Detail" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 border-[6px] border-[#3e3c3c] pointer-events-none"></div>
+                </div>
+
+                <!-- Bio Text (Now positioned directly under the image) -->
+                <div class="text-[#F7F4EB]">
+                    <p class="font-geist text-[24px] lg:text-[32px] leading-[1.2] tracking-[-1.6px]">
+                        In eight years as a senior research attorney at the California Court of Appeal,
+                        I worked on 135 opinions dealing with civil, criminal, family, dependency,
+                        and delinquency matters. I bring that deep experience to provide exceptional
+                        representation for my clients in state and federal appeals and petitions
+                        for habeas corpus and post conviction relief.
+                    </p>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Empty to allow the background graphic to show -->
+            <div class="hidden lg:block"></div>
+        </div>
+
+        <!-- 4. Recent Wins Section (Centered at the bottom) -->
+        <div class="mt-40">
+            <h2 class="text-[64px] font-geist font-semibold text-center mb-16 text-white">Recent Wins</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <div class="bg-white text-black p-8 rounded-[20px] shadow-xl flex flex-col hover:scale-105 transition-all duration-500 ease-out
+            hover:-translate-y-6 hover:shadow-2xl hover:scale-[1.02]
+            cursor-pointer">
+                    <h3 class="text-xl font-bold mb-4">People v. Hefner (D086348)</h3>
+                    <p class="text-base leading-relaxed">Where the court omitted an element of the offense from jury instructions,
+                        I secured reversal of that conviction. 
+                        I also prevailed in invalidating a probation condition as unconstitutional for delegating judicial authority to the probation department.</p>
+                </div>
+                <div class="bg-white text-black p-8 rounded-[20px] shadow-xl flex flex-col transition-all duration-500 ease-out
+            hover:-translate-y-6 hover:shadow-2xl hover:scale-[1.02]
+            cursor-pointer">
+                    <h3 class="text-xl font-bold mb-4">People v. Clayton (D085021)</h3>
+                    <p class="text-base leading-relaxed">Addressing a novel question of statutory interpretation, I helped my client clear his name and obtain a certificate of rehabilitation and governor’s pardon under Penal Code 4852.01.  The AG conceded error on both claims.</p>
+                </div>
+                <div class="bg-white text-black p-8 rounded-[20px] shadow-xl flex flex-col transition-all duration-500 ease-out
+            hover:-translate-y-6 hover:shadow-2xl hover:scale-[1.02]
+            cursor-pointer">
+                    <h3 class="text-xl font-bold mb-4">People v. Warren (D084087)</h3>
+                    <p class="text-base leading-relaxed">Where one trial judge revoked another judge’s probation modification order and staked out exclusive jurisdiction over probation supervision, I prevailed in arguing on appeal that one trial judge may not constitutionally overrule another.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-full h-[625px] overflow-hidden relative">
+    <img
+            src="Pictures/Harper Library.jpeg"
+            alt="YaleLibrary divider"
+            class="w-full h-full object-cover object-bottom"
+    />
+    <div class="absolute inset-0 bg-black/10"></div>
+</section>
+
+<div id="footer"></div>
+
+</body>
+<script>
+    fetch('./assets/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+    fetch('./assets/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+</html>

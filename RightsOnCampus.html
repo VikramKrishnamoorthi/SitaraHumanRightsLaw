@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitara Human Rights Law</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+<div id="navbar"></div>
+
+<div class="relative isolate px-6 pt-14 lg:px-8 h-screen flex items-center justify-center overflow-hidden">
+    <div aria-hidden="true" class="absolute inset-0 -z-10">
+        <img src="Pictures/blankimg.png"
+             alt="Hero Background"
+             class="h-full w-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-black/30"></div>
+    </div>
+    <div class="mx-auto max-w-2xl text-center">
+        <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl drop-shadow-lg">
+            Defending Students' Rights
+        </h1>
+    </div>
+</div>
+
+<section class="bg-tertiary-bg py-32 px-6 lg:px-20 overflow-hidden gap-16">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+        <div class="relative w-full lg:w-1/2 aspect-[4/3] shadow-2xl">
+            <img src="Pictures/blankimg.png" alt="Detail" class="w-full h-full object-cover">
+            <div class="absolute inset-0 border-[6px] border-[#3e3c3c] pointer-events-none"></div>
+        </div>
+        <div class="w-full lg:w-1/2">
+            <p class="font-geist text-secondary-bg text-[24px] lg:text-[32px] leading-[1.2] tracking-[-1.6px]">
+                I have extensive experience going after powerful interests to protect vulnerable communities through impact litigation and individual defense.  As public universities restrict classroom speech and campus protest, I represent students and faculty in sensitive cases to vindicate First Amendment and due process rights.
+            </p>
+        </div>
+    </div>
+
+    <div class="my-8 px-6 lg:px-20">
+        <img src="Pictures/WhiteFancyBar.png" class="w-full h-auto" alt="Decorative Divider">
+    </div>
+
+    <section class="bg-tertiary-bg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mt-20">
+<!--           card 1-->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white text-black p-8 rounded-[20px] shadow-xl flex flex-col hover:scale-105 transition-all duration-500 ease-out
+            hover:-translate-y-6 hover:shadow-2xl hover:scale-[1.02]
+            cursor-pointer">
+                <img class="w-full" src="Pictures/blankimg.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Defended student accused of campus disciplinary violations following a mass arrest in 2024.
+                    </div>
+                </div>
+            </div>
+<!--            card 2-->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white text-black p-8 rounded-[20px] shadow-xl flex flex-col hover:scale-105 transition-all duration-500 ease-out
+            hover:-translate-y-6 hover:shadow-2xl hover:scale-[1.02]
+            cursor-pointer">
+                <img class="w-full" src="Pictures/blankimg.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Defended faculty facing investigation by outside counsel for participating in protest activity in 2025.
+                    </div>
+                </div>
+            </div>
+<!--            card 3-->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white text-black p-8 rounded-[20px] shadow-xl flex flex-col hover:scale-105 transition-all duration-500 ease-out
+            hover:-translate-y-6 hover:shadow-2xl hover:scale-[1.02]
+            cursor-pointer">
+                <img class="w-full" src="Pictures/blankimg.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Currently investigating and pursuing impact cases dealing with disciplinary due process, academic freedom, and free speech.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</section>
+
+<section class="w-full h-[625px] overflow-hidden relative">
+    <img
+            src="Pictures/Yale_Law_Library.jpeg"
+            alt="YaleLibrary divider"
+            class="w-full h-full object-cover object-center"
+    />
+    <div class="absolute inset-0 bg-black/10"></div>
+</section>
+
+<div id="footer"></div>
+<script>
+    fetch('./assets/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+    fetch('./assets/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+</body>
+</html>

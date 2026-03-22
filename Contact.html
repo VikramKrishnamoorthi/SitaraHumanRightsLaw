@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitara Human Rights Law</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+<div id="navbar"></div>
+
+<div class="relative isolate px-6 pt-14 lg:px-8 h-screen flex items-center justify-center overflow-hidden">
+    <div aria-hidden="true" class="absolute inset-0 -z-10">
+        <img src="Pictures/SDCBA Award 1.jpg"
+             alt="Hero Background"
+             class="h-full w-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-black/30"></div>
+    </div>
+    <div class="mx-auto max-w-2xl text-center">
+        <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl drop-shadow-lg">
+            Let Mytili Stand Up For You
+        </h1>
+    </div>
+</div>
+
+<section class="bg-main-bg">
+    <section class="text-center bg-main-bg py-20 px-6">
+        <div class="absolute top-220 right-[-150px] w-[639px] h-[32px] bg-[#EDEAE0] hidden lg:block z-0"></div>
+        <div class="absolute top-234 right-[-300px] w-[639px] h-[32px] bg-[#EDEAE0] hidden lg:block z-0"></div>
+        <div class="absolute top-220 left-[-150px] w-[639px] h-[32px] bg-[#EDEAE0] hidden lg:block z-0"></div>
+        <div class="absolute top-234 left-[-300px] w-[639px] h-[32px] bg-[#EDEAE0] hidden lg:block z-0"></div>
+        <div class="flex flex-col items-center justify-center">
+
+            <h1 class="text-white font-geist text-[60px] tracking-[-0.03em] leading-[0.9] mb-8">
+                About Mytili
+            </h1>
+
+            <!-- Added mx-auto so the 900px box centers itself -->
+            <p class="text-white/90 font-geist leading-relaxed max-w-[900px] text-[25px] font-normal mx-auto">
+                After graduating from Yale Law School, I worked as an associate at major law firms representing corporations in high stakes litigation. I  spent the next two years at the Center for Justice and Accountability, where I brought impact litigation against human rights abusers. After eight years at the California Court of Appeal, I founded Sitara Human Rights Law as a sole practitioner in 2024 to return to my advocacy roots.            <br><br>
+
+                At Sitara, I  handle impact litigation and appeals.  My impact cases and faculty defense work deal with sensitive topics around protest, disciplinary due process, and academic freedom.  I am deeply rooted in the San Diego legal community as past president of the South Asian Bar Association of San Diego and recipient of the 2023 San Diego County Bar Association Community Service Award. 
+            </p>
+        </div>
+    </section>
+
+    <div class=" px-6 lg:px-20">
+        <img src="Pictures/WhiteFancyBar.png" class="w-full h-auto" alt="Decorative Divider">
+    </div>
+
+    <!-- Main Contact Section -->
+    <section class="bg-[#9E2A27] py-24 px-6 lg:px-20 text-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="flex justify-center">
+                <!-- Matches the rounded corners of your other photos -->
+                <div class="w-full max-w-[500px] aspect-[3/4] overflow-hidden rounded-[40px] shadow-2xl">
+                    <img src="Pictures/law books with Frida.jpg"
+                         alt="Office Library"
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="text-center lg:text-left space-y-12">
+                <div>
+                    <h3 class="text-[32px] lg:text-[48px] font-geist font-medium leading-tight">
+                        Work With Me!
+                    </h3>
+                </div>
+                <p class="text-[24px] lg:text-[32px] font-geist">
+                    If you need a skilled California-licensed appellate or impact litigator who will fight for you, e-mail to book a consult.  Please note that e-mailing me does not on its own create an attorney-client relationship.
+                    If you are a non-profit legal services provider or public interest law firm seeking support with impact litigation, appeals, or discrete motions/ briefs, e-mail me to inquire about contract support.  Rates vary depending on project complexity and scope.
+                    If you are a law school administrator, e-mail me for student internship opportunities and adjunct teaching needs.
+                </p>
+                <div>
+                    <p class="text-[24px] lg:text-[32px] font-geist">
+                        Email: <a href="mailto:mytili@sitaralaw.com" class="font-bold hover:underline">mytili@sitaralaw.com</a>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="text-[24px] lg:text-[32px] font-geist">
+                        Phone: <a href="tel:6197368586" class="font-bold hover:underline">619-736-8586</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="w-full h-[625px] overflow-hidden relative">
+    <img
+            src="Pictures/Azulejos.jpeg"
+            alt="YaleLibrary divider"
+            class="w-full h-full object-cover object-center"
+    />
+    <div class="absolute inset-0 bg-black/10"></div>
+</section>
+
+<div id="footer"></div>
+</body>
+<script>
+    fetch('./assets/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+    fetch('./assets/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+</html>

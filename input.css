@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+@theme {
+    --color-main-bg: #9E2A27;
+    --color-secondary-bg: #EDEAE0;
+    --color-tertiary-bg: #272C49;
+    --color-hero-gradient: linear-gradient(to bottom, #9E2A27, #EDEAE0);
+
+    --font-geist: "Geist", sans-serif;
+    /* Custom Font Sizes */
+    --font-size-display-2: 120px;
+    --font-size-body-lg: 24px;
+
+    /* Figma Specifics */
+    --letter-spacing-display-2: -0.03em;
+    --line-height-display-2: 0.95;
+}
