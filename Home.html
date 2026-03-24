@@ -6,14 +6,22 @@
     <link rel="stylesheet" href="dist/output.css">
 </head>
 <body>
-<div id="navbar"></div>
+<div id="navbar" class="sm:h-40"></div>
 <!--Hero image and text-->
 <div class="relative h-[60vh] lg:h-screen w-full flex items-center justify-center overflow-hidden">
     <div aria-hidden="true" class="absolute inset-0 -z-10">
-        <img src="Pictures/With Navi Pillay & Sharika Thiranagama 2015 (2).JPG"
-             alt="Hero Background"
-             class="h-full w-full object-cover opacity-60">
-        <div class="absolute inset-0 bg-black/30"></div>
+        <picture>
+            <source
+                    media="(orientation: portrait)"
+                    srcset="Pictures/Mobile-Landingphoto.jpg">
+            <source
+                    media="(orientation: landscape)"
+                    srcset="Pictures/With Navi Pillay & Sharika Thiranagama 2015 (2).JPG">
+            <img
+                    src="Pictures/With Navi Pillay & Sharika Thiranagama 2015 (2).JPG"
+                    alt="Hero Background"
+                    class="h-full w-full object-cover object-center opacity-60">
+        </picture>
     </div>
     <div class="mx-auto max-w-2xl text-center">
         <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl drop-shadow-lg font-geist">
