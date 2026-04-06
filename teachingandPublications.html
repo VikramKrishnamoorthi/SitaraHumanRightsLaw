@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-[#EDEAE0] font-geist text-[#272C49]">
+<div id="navbar"></div>
+<div class="relative h-[30vh] lg:h-screen w-full flex items-center justify-center overflow-hidden">
+  <div aria-hidden="true" class="absolute inset-0 -z-10">
+    <img src="Pictures/blankimg.png"
+         alt="Hero Background"
+         class="h-full w-full object-cover opacity-60">
+    <div class="absolute inset-0 bg-black/30"></div>
+  </div>
+  <div class="mx-auto max-w-2xl text-center">
+    <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl drop-shadow-lg font-geist">
+      Teaching and Publications
+    </h1>
+  </div>
+</div>
+
+<section class="pt-32 pb-20 px-6 lg:px-8  bg-tertiary-bg">
+  <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+    <div class="w-full lg:w-1/2">
+      <img src="blank" alt="Teaching at SDSU" class="w-full aspect-[4/3] object-cover grayscale-[20%]">
+    </div>
+
+    <div class="w-full lg:w-1/2">
+      <span class="text-secondary-bg font-bold uppercase tracking-widest text-sm">Faculty & Instruction</span>
+      <h2 class="text-4xl md:text-5xl font-bold text-secondary-bg mt-4 mb-6 leading-tight">
+        Teaching at San Diego State University
+      </h2>
+      <div class="space-y-6 text-lg text-secondary-bg leading-relaxed font-geist">
+        <p>
+          I teach an upper-division college course on **political violence** as an adjunct professor of political science at San Diego State University.
+        </p>
+        <p>
+          I have extensive experience teaching and guest lecturing on human rights law from both theoretical and practical angles. My approach focuses on bridging the gap between high-level policy and the reality of frontline accountability.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="footer"></div>
+</body>
+
+<script>
+  fetch('./assets/navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          });
+  fetch('./assets/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer').innerHTML = data;
+          });
+</script>
+
+</html>
